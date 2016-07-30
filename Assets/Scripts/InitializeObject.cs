@@ -1,9 +1,6 @@
-﻿using UnityEditor;
-using UnityEngine;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using UnityEngine;
 
 // Containing list time and vector of object
 public class Object

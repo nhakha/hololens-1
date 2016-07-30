@@ -1,9 +1,5 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 
 public class ObjectController : MonoBehaviour
 {
