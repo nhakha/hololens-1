@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class ObjectController : MonoBehaviour
 {
     public List<Vector3> vectorList;
-    public List<double> timeList;
+    //public List<double> timeList;
     // Check if object can move
     public bool flag;
+    public double moveTime;
     
     private int index;
     private bool isMoving;
     
-    private double moveTime;
     private double startTime;
     private double endTime;
     private Vector3 originalPosition;
@@ -40,11 +40,12 @@ public class ObjectController : MonoBehaviour
             {
                 isMoving = false;
                 index++;
+                moveTime = 0;
+                flag = false;
             }
             // If object doesn't move
             else if (!isMoving)
             {
-                moveTime = timeList[index] - timeList[index - 1];
                 startTime = Time.time;
                 endTime = Time.time + moveTime;
 
